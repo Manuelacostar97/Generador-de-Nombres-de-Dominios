@@ -24,11 +24,8 @@ pronoun.forEach(p => {
   });
 });
 
-for (let i = 0; i < 16; i++) {
+for (let i = 0; i < dominio.length; i++) {
   let i = parseInt(Math.random() * dominio.length);
   seleccion.push(dominio[i]);
-  dominio.splice(i, 1);
 }
-
-console.log(dominio);
 console.log(seleccion);
